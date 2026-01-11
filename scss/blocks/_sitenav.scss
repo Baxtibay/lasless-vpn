@@ -1,0 +1,72 @@
+.sitenav {
+  display: flex;
+
+  @include breakpoint-down(900px) {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
+
+.sitenav__list {
+  @include list-unstyled;
+  @include flex-row;
+  @include breakpoint-down(900px) {
+    padding-left: 24px;
+    padding-right: 24px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  @include breakpoint-down(580px) {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+}
+
+.sitenav__item {
+  @include breakpoint-down(900px) {
+    width: 100%;
+    padding: 10px;
+  
+    &:hover {
+      background-color: #d9d9d9;
+      color: #fff;
+    }
+    
+    &--active:hover .sitenav__link {
+      color: #fff;
+    }
+    
+    &:active {
+      opacity: 0.6;
+    }
+    
+    &--active {
+      background-color: $danger-color;
+    }
+    
+    &--active .sitenav__link {
+      color: #fff;
+    }
+  }
+
+  @include breakpoint-down(580px) {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+
+  @include breakpoint-down(900px) {
+    margin-right: 0;
+  }
+}
+
+.sitenav__link {
+  @include link-unstyled($text-color);
+}

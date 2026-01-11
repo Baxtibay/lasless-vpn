@@ -1,0 +1,15 @@
+.site-header__auth {
+  @include flex-row;
+  @include breakpoint-down(900px) {
+    margin-right: 8px;
+  }
+}
+
+.site-header__auth-link {
+  margin-right: 30px;
+  white-space: nowrap;
+
+  @include breakpoint-down(580px) {
+    margin-right: 20px;
+  }
+}

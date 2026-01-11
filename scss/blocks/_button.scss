@@ -1,0 +1,36 @@
+.button {
+  padding: 13px 45px;
+  font-size: 16px;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition:     
+    color 0.3s ease,
+    background-color 0.3s ease;
+
+  @include hover-effect;
+  @include active-effect;
+
+  
+  /* MODIFIERS */
+  &--outline {
+    border-color: $danger-color;
+    color: $danger-color;
+    border-radius: 50px;
+
+    @include breakpoint-down(580px) {
+      padding: 6px 16px;
+      font-size: 13px;
+    }
+  }
+
+  &--primary {
+    padding: 17px 65px;
+    border-color: $danger-color;
+    background-color: $danger-color;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 25px 20px -15px rgba(245, 56, 56, 0.35);
+  }
+}
