@@ -29,6 +29,15 @@ body {
   color: #000;
 }
 
+// BLUR-EFFECT
+body.menu-open {
+  overflow: hidden;
+  .main-content {
+    filter: blur(6px);
+  }
+}
+
+
 img {
   max-width: 100%;
   height: auto;

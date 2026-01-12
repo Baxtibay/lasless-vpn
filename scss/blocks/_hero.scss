@@ -1,0 +1,29 @@
+.hero {
+  padding-top: 36px;
+  margin-bottom: 130px;
+
+  @include breakpoint-down(800px) {
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  @include breakpoint-down(800px) {
+    padding-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.hero__img {
+  width: 575px;
+  height: 360px;
+  object-fit: cover;
+
+  @include breakpoint-down(1100px) {
+    height: auto;
+  }
+
+  @include breakpoint-down(800px) {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+}
