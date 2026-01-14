@@ -718,4 +718,134 @@ img {
 
 .section-heading--center {
   align-items: center;
+}
+
+.stats {
+  margin-bottom: 50px;
+}
+
+.stats__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 37px 0;
+  border-radius: 10px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.08);
+}
+@media only screen and (max-width: 580px) {
+  .stats__list {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+}
+
+.stats__item {
+  padding-left: 90px;
+  width: 100%;
+  max-width: 33.3333333333%;
+}
+.stats__item:not(:last-child) .stats__item-inner {
+  border-right: 1px solid #EEEFF2;
+}
+@media only screen and (max-width: 1000px) {
+  .stats__item {
+    padding-left: 70px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .stats__item {
+    padding-left: 42px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .stats__item {
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .stats__item {
+    padding-left: 24px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .stats__item {
+    padding-left: 14px;
+  }
+}
+
+.stats__item-inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 270px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .stats__item-inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .stats__item-inner {
+    padding: 0;
+  }
+}
+
+.stats__icon-wrapper {
+  padding: 15px;
+  margin-right: 36px;
+  background-color: #FFECEC;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 730px) {
+  .stats__icon-wrapper {
+    margin-right: 25px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .stats__icon-wrapper {
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
+
+.stats__icon {
+  display: block;
+}
+
+.stats__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__value {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  .stats__value {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .stats__value {
+    font-size: 15px;
+    line-height: 14px;
+  }
+}
+
+.stats__label {
+  font-size: 20px;
+  line-height: 30px;
+  color: #4f5665;
+}
+@media only screen and (max-width: 730px) {
+  .stats__label {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }/*# sourceMappingURL=main.css.map */
