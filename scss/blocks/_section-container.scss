@@ -40,6 +40,7 @@
     line-height: 30px;
   }
 
+  
   /* HERO MODIFIER VARIANT */
   &--hero {
     .section-heading__text {
@@ -48,6 +49,12 @@
       @include breakpoint-down(800px) {
         margin-bottom: 20px;
       }
+    }
+  }
+
+  &--feature {
+    .section-heading__text {
+      margin-bottom: 20px;
     }
   }
 }
