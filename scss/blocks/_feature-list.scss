@@ -1,45 +1,7 @@
 .feature-list {
   @include list-unstyled;
 
-
-  /*  1-STATUS (BOXED)  */
-  &--boxed {
-    .feature__item-icon-wrapper {
-      width: 24px;
-      height: 24px;
-      margin-right: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $green-color;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-
-    .feature__icon {
-      color: #fff;
-      font-size: 12px;
-    }
-  }
-
-
-  /*  2-STATUS (INLINE)  */
-  &--inline {
-    .feature-list__item {
-      align-items: center;
-    }
-
-    .feature__item-icon-wrapper {
-      margin-right: 20px;
-    }
-
-    .feature__icon {
-      font-size: 13px;
-    }
-  }
-}
-
-.feature__item {
+  &__item {
     display: flex;
     align-items: flex-start;
 
@@ -48,12 +10,42 @@
     }
   }
 
-.feature__text {
-  font-size: 14px;
-  line-height: 30px;
-}
+  &__icon-wrapper {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
 
-.feature__icon {
-  color: $green-color;
-  font-size: 14px;
+  &__icon {
+    color: $green-color;
+    font-size: 14px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  /* modifiers */
+  &--boxed {
+    .feature-list__icon-wrapper {
+      background-color: $green-color;
+      border-radius: 50%;
+    }
+
+    .feature-list__icon {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+
+  &--inline {
+    .feature-list__item {
+      align-items: center;
+    }
+  }
 }
