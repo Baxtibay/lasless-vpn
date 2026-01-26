@@ -936,6 +936,9 @@ img {
   color: #fff;
   font-size: 12px;
 }
+.feature-list--inline {
+  margin-bottom: 30px;
+}
 .feature-list--inline .feature-list__item {
   align-items: center;
 }
