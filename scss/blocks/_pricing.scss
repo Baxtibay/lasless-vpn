@@ -1,0 +1,100 @@
+.pricing {
+  margin-bottom: 50px;
+}
+
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing__list {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 50px;
+  @include list-unstyled;
+
+  @include breakpoint-down(1100px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  @include breakpoint-down(800px) {
+    grid-template-columns: repeat(2, 320px);
+    gap: 40px;
+  }
+
+  @include breakpoint-down(640px) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.pricing__item {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 760px;
+  padding: 80px 50px 50px 50px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: $danger-color;
+  }
+
+  @include breakpoint-down(1000px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include breakpoint-down(640px) {
+    padding: 40px 100px;
+    min-height: auto;
+  }
+}
+
+.card__img {
+  display: flex;
+  width: 144px;
+  height: 165px;
+  margin-bottom: 30px;
+}
+
+.card__content {
+  margin-bottom: auto;
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.feature-list__item:not(:last-child) {
+  margin-bottom: 10px;
+
+}
+
+.card-price-button-wrapper {
+  text-align: center;
+}
+
+.card__price {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.card__price-amount {
+  font-weight: 500;
+}
+
+.card__price-period {
+  color: $text-color;
+}

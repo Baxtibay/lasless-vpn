@@ -33,6 +33,11 @@
     line-height: 30px;
   }
 
+  &--center {
+    align-items: center;
+    text-align: center;
+  }
+
   
   /* HERO MODIFIER VARIANT */
   &--hero {
@@ -50,4 +55,8 @@
       margin-bottom: 20px;
     }
   }
+}
+
+.section-heading--center {
+  align-items: center;
 }
