@@ -722,6 +722,19 @@ img {
 .section-heading--feature .section-heading__text {
   margin-bottom: 20px;
 }
+.section-heading--global-network {
+  margin-bottom: 150px;
+}
+@media only screen and (max-width: 768px) {
+  .section-heading--global-network {
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 488px) {
+  .section-heading--global-network {
+    margin-bottom: 50px;
+  }
+}
 
 .section-heading--center {
   align-items: center;
@@ -944,7 +957,7 @@ img {
 }
 
 .pricing {
-  margin-bottom: 50px;
+  margin-bottom: 150px;
 }
 
 .pricing__container {
@@ -1050,4 +1063,14 @@ img {
 
 .card__price-period {
   color: #4F5665;
+}
+
+.glogabl-network {
+  margin-bottom: 100px;
+}
+
+.glogabl-network__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

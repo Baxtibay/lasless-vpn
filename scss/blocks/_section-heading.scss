@@ -55,6 +55,18 @@
       margin-bottom: 20px;
     }
   }
+
+  &--global-network {
+    margin-bottom: 150px;
+
+    @include breakpoint-down(768px) {
+      margin-bottom: 100px;
+    }
+    
+    @include breakpoint-down(488px) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .section-heading--center {
