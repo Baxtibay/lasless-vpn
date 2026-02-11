@@ -1,0 +1,31 @@
+.companies {
+  margin-bottom: 130px;
+  @include breakpoint-down(480px) {
+    margin-bottom: 50px;
+  }
+}
+
+.companies__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-unstyled;
+}
+
+.companies__item {
+  width: calc(100% / 5);
+
+  @include breakpoint-down(1040px) {
+    width: calc(100% / 3);
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint-down(768px) {
+    width: calc(100% / 2);
+  }
+
+  @include breakpoint-down(480px) {
+    width: 100%;
+    padding-left: 100px;
+  }
+}
