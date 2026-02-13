@@ -1081,6 +1081,7 @@ img {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .reviews {
   margin-bottom: 180px;
   padding-top: 80px;
@@ -1250,4 +1251,43 @@ img {
 .reviews__arrow--next {
   background: #f53838;
   color: #fff;
+=======
+.companies {
+  margin-bottom: 130px;
+}
+@media only screen and (max-width: 480px) {
+  .companies {
+    margin-bottom: 50px;
+  }
+}
+
+.companies__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.companies__item {
+  width: 20%;
+}
+@media only screen and (max-width: 1040px) {
+  .companies__item {
+    width: 33.3333333333%;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .companies__item {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .companies__item {
+    width: 100%;
+    padding-left: 100px;
+  }
+>>>>>>> c2c29668ee47fed541a10ac268a2f528e0c6437e
 }/*# sourceMappingURL=main.css.map */
