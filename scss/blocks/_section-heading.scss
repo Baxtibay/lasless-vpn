@@ -25,12 +25,37 @@
       font-size: 20px;
       line-height: 26px;
     }
+
+    &--subscribe {
+      @include breakpoint-down(540px) {
+        font-size: 17px;
+        line-height: 20px;
+      }
+
+      @include breakpoint-down(450px) {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__text {
     margin: 0;
     font-size: 16px;
     line-height: 30px;
+
+    &--subscribe {
+      @include breakpoint-down(540px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      @include breakpoint-down(450px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
   }
 
   &--center {

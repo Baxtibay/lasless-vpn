@@ -1,14 +1,7 @@
 .reviews {
-  margin-bottom: 180px;
   padding-top: 80px;
   overflow: hidden;
 }
-
-// .reviews-flex {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
 
 .reviews__container {
   margin-bottom: 60px;
@@ -23,12 +16,16 @@
   gap: 30px;
   transition: transform 0.4s ease;
   will-change: transform;
+
+  @include breakpoint-down(450px) {
+    gap: 12px;
+  }
 }
 
 .reviews__slide {
   flex: 0 0 370px;
   @include breakpoint-down(480px) {
-    flex: 0 0 350px;
+    flex: 0 0 330px;
   }
 }
 
@@ -50,7 +47,8 @@
   }
 
   @include breakpoint-down(480px) {
-    min-width: 350px;
+    min-width: 330px;
+    padding: 18px;
   }
 }
 
@@ -113,7 +111,7 @@
   color: #555;
   @include breakpoint-down(480px) {
     font-size: 15px;
-    line-height: 26px;
+    line-height: 22px;
   }
 }
 
