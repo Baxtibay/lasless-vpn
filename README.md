@@ -8,7 +8,7 @@ A responsive landing page built with HTML, SCSS (BEM), and vanilla JavaScript fe
 
 ##  Live Demo
 
-🌐 https://github.com/Baxtibay/lasless-vpn
+🌐 https://lasless.netlify.app/
 
 ---
 
